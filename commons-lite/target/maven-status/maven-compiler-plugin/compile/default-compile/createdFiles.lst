@@ -1,0 +1,8 @@
+org/apache/commons/io/FilenameUtils.class
+org/apache/xmlgraphics/image/codec/util/MemoryCacheSeekableStream.class
+org/apache/commons/io/FileUtils.class
+org/apache/commons/collections/map/LazyMap.class
+org/apache/commons/codec/binary/Hex.class
+org/apache/commons/io/IOUtils.class
+org/apache/xmlgraphics/image/codec/util/SeekableStream.class
+org/apache/commons/collections/Transformer.class

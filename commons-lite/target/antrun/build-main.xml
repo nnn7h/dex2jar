@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
+  <if>
+    <available file=".hg/hgrc"/>
+    <then>
+      <echo>call hg kwexpand</echo>
+      <echo file=".hg/hgrc">[paths]
+default = https://dex2jar.googlecode.com/hg
+[extensions]
+keyword =
+[keyword]
+**.java =
+[keywordmaps]
+Rev = {node|short}</echo>
+      <exec executable="hg">
+        <arg value="kwexpand"/>
+      </exec>
+    </then>
+  </if>
+</target>
+</project>
